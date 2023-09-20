@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      charset="utf-8" />
+    <title>OTP Page</title>
+    <link rel="stylesheet" href="./LoginPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous" />
+  </head>
+  <div class="login-form">
+    <div class="form-title">Member Login</div>
+    <div class="form-input">
+      <label for="username">Username</label>
+      <input type="text" id="username" />
+    </div>
+    <div class="form-input">
+      <label for="password">Password</label>
+      <input type="password" id="password" />
+    </div>
+    <div class="captcha">
+      <label for="captcha-input">Enter Captcha</label>
+      <div class="preview"></div>
+      <div class="captcha-form">
+        <input type="text" id="captcha-form" placeholder="Enter captcha text" />
+        <button class="captcha-refresh">
+          <i class="fa fa-refresh"></i>
+        </button>
+      </div>
+    </div>
+    <div class="form-input">
+      <button id="login-btn">Login</button>
+    </div>
+  </div>
+  <script src="./LoginPage.js"></script>
+</html>
