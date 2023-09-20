@@ -5,7 +5,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1"
       charset="utf-8" />
-    <title>OTP Page</title>
+    <title>Login Page Page</title>
     <link rel="stylesheet" href="./LoginPage.css" />
     <link
       rel="stylesheet"
@@ -13,29 +13,57 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous" />
   </head>
-  <div class="login-form">
-    <div class="form-title">Member Login</div>
-    <div class="form-input">
-      <label for="username">Username</label>
-      <input type="text" id="username" />
-    </div>
-    <div class="form-input">
-      <label for="password">Password</label>
-      <input type="password" id="password" />
-    </div>
-    <div class="captcha">
-      <label for="captcha-input">Enter Captcha</label>
-      <div class="preview"></div>
-      <div class="captcha-form">
-        <input type="text" id="captcha-form" placeholder="Enter captcha text" />
-        <button class="captcha-refresh">
-          <i class="fa fa-refresh"></i>
-        </button>
+  <body class="container-fluid bg-body-tertiary d-block">
+    <div class="login-form row justify-content-center">
+      <div class="login-form col-md-6 col-lg-4" style="min-width: 500px">
+        <div
+          class="login-form card bg-white mb-5 mt-5 border-0"
+          style="box-shadow: 0 12px 15px rgba(00, 0, 0.02)">
+          <div class="login-form card-body p-5 text-center">
+            <h4>Member Login</h4>
+            <p>Kindly Enter your username and password</p>
+
+            <div class="form mb-4">
+              <div class="input-field">
+                <label for="username">Username</label>
+                <input type="text" id="username" />
+              </div>
+              <div class="input-field">
+                <label for="password">Password</label>
+                <input type="password" id="password" />
+              </div>
+            </div>
+            <div class="captcha">
+              <label for="captcha-input">Enter Captcha</label>
+              <div class="preview"></div>
+              <div class="captcha-form">
+                <input
+                  type="text"
+                  id="captcha-form"
+                  placeholder="Enter captcha text" />
+                <button class="captcha-refresh">
+                  <i class="fa fa-refresh"></i>
+                </button>
+              </div>
+              <button class="btn btn-primary mb-3" title="Submit">Login</button>
+            </div>
+            <p class="reset text-muted mb-0">
+              Trouble Logging In? <a href="">Reset Password</a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="form-input">
-      <button id="login-btn">Login</button>
+
+    <div class="footer">
+      Made with ❤️| Visit
+      <a
+        href="https://github.com/absolute-viper/2_FA_Authentication"
+        rel="noopener noreferrer"
+        target="_blank"
+        >Github</a
+      >
     </div>
-  </div>
+  </body>
   <script src="./LoginPage.js"></script>
 </html>
