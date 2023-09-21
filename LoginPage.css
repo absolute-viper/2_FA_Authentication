@@ -8,12 +8,14 @@ body {
   font-size: 15px;
   color: #111;
   margin-bottom: 5px;
+  text-align: left;
 }
 .login-form .input-field input {
   width: 100%;
   padding: 10px;
   border: 1px solid #888;
   font-size: 15px;
+  margin-bottom: 10px;
 }
 .login-form .captcha {
   margin: 15px 0px;
@@ -40,6 +42,7 @@ body {
   width: 100%;
   padding: 8px;
   border: 1px solid #888;
+  margin-bottom: 10px;
 }
 .login-form .captcha .captcha-form .captcha-refresh {
   width: 40px;
@@ -48,32 +51,7 @@ body {
   background: #888;
   color: #eee;
   cursor: pointer;
-}
-
-.input-field,
-.captcha-form input {
-  flex-direction: row;
-  column-gap: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.input-field input,
-.captcha-form input {
-  height: 45px;
-  width: 100%;
-  outline: none;
-  font-size: 1.125rem;
-  text-align: center;
-  border: 1px solid #ddd;
-}
-.input-field input:focus {
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-}
-.input-field input::-webkit-inner-spin-button,
-.input-field input::-webkit-outer-spin-button {
-  display: none;
+  margin-bottom: 10px;
 }
 
 .reset {
@@ -84,12 +62,12 @@ body {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 12px;
   text-align: right;
   font-family: monospace;
 }
 .footer a {
-  color: black;
+  color: rgb(0, 179, 255);
   text-decoration: none;
 }

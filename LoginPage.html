@@ -12,6 +12,9 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body class="container-fluid bg-body-tertiary d-block">
     <div class="login-form row justify-content-center">
@@ -41,14 +44,22 @@
                   type="text"
                   id="captcha-form"
                   placeholder="Enter captcha text" />
-                <button class="captcha-refresh">
-                  <i class="fa fa-refresh"></i>
+                <button
+                  class="captcha-refresh"
+                  type="button"
+                  title="Click to refresh captcha">
+                  <i class="fa fa-refresh fa-spin"></i>
                 </button>
               </div>
-              <button class="btn btn-primary mb-3" title="Submit">Login</button>
+              <button
+                class="btn btn-primary mb-3"
+                title="Submit"
+                onclick="location.href='./OTPPage.html'">
+                Login
+              </button>
             </div>
             <p class="reset text-muted mb-0">
-              Trouble Logging In? <a href="">Reset Password</a>
+              Trouble Logging In? <a href="#">Reset Password</a>
             </p>
           </div>
         </div>
