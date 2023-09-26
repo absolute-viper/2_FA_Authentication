@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 body {
   background-image: linear-gradient(to right, #006663, #111111),
     url("leaf-bg.jpeg");
+  font-family: "Poppins", sans-serif;
 }
 .login-form .input-field label,
 .login-form .captcha label {

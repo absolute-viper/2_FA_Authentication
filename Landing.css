@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+.content {
+  background-image: linear-gradient(to right, #006663, #111111),
+    url("leaf-bg.jpeg");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  width: 350px;
+  height: 280px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.text h2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: -100%;
+  color: white;
+  font-size: 6.5em;
+  font-family: "Luckiest Guy", cursive;
+}
+section {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.cover {
+  position: absolute;
+  background-color: white;
+  height: 60%;
+  width: 100%;
+  top: -60%;
+  z-index: 2;
+}
+.main_content {
+  width: 60%;
+  color: white;
+  display: none;
+  padding: 10px;
+}
+.main_content h2 {
+  font-size: 5em;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.main_content p {
+  padding: 30px 0px 0px 0px;
+  font-size: 1.5em;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  text-align: right;
+  font-family: monospace;
+}
+.footer a {
+  color: rgb(0, 179, 255);
+  text-decoration: none;
+}
