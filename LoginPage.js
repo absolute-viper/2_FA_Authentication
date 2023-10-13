@@ -38,7 +38,7 @@
     .querySelector(".login-form #login-btn")
     .addEventListener("click", function () {
       let inputCaptchaValue = document.querySelector(
-        ".login-form .captcha input"
+        ".login-form .captcha .captcha-form .captcha-form-input"
       ).value;
       if (inputCaptchaValue === captchaValue) {
         swal("", "Logging In!", "success");
