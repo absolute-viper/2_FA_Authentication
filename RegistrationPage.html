@@ -6,7 +6,7 @@
       content="width=device-width, initial-scale=1"
       charset="utf-8"
     />
-    <title>Login Page Page</title>
+    <title>Registration Page</title>
     <link rel="stylesheet" href="./LoginPage.css" />
     <link
       rel="stylesheet"
@@ -27,10 +27,20 @@
           style="box-shadow: 0 12px 15px rgba(00, 0, 0.02)"
         >
           <div class="login-form card-body p-5 text-center">
-            <h4>Member Login</h4>
-            <p>Kindly Enter your username and password</p>
-            <form action="/login" method="POST">
+            <h4>User Registration</h4>
+            <p>Kindly Enter the details to Signup</p>
+            <form action="/register" method="POST">
               <div class="form mb-4">
+                <div class="input-field">
+                  <label for="username">Username</label>
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
                 <div class="input-field">
                   <label for="email">Email</label>
                   <input
@@ -52,7 +62,7 @@
                 </div>
               </div>
               <div class="captcha">
-                <label for="captcha-input">Enter Captcha</label>
+                <!-- <label for="captcha-input">Enter Captcha</label>
                 <div class="preview"></div>
                 <div class="captcha-form">
                   <input
@@ -67,21 +77,17 @@
                   >
                     <i class="fa fa-refresh fa-spin"></i>
                   </button>
-                </div>
+                </div> -->
                 <button
                   class="btn btn-primary mb-3"
-                  title="Login"
-                  type="Submit"
-                  onclick="location.href='./OTPPage.html'"
+                  title="Submit"
+                  type="submit"
+                  onclick="location.href='./Login.html'"
                 >
-                  Login
+                  Submit
                 </button>
-                <button
-                  class="btn btn-primary mb-3"
-                  title="Signup"
-                  onclick="location.href='./RegistrationPage.html'"
-                >
-                  Signup
+                <button class="btn btn-primary mb-3" title="Reset" type="reset">
+                  Clear
                 </button>
               </div>
             </form>
@@ -101,4 +107,5 @@
     </div>
   </body>
   <script src="./LoginPage.js"></script>
+  <script type="module" src="./index.js"></script>
 </html>

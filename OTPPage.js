@@ -1,8 +1,8 @@
-const inputs = document.querySelectorAll(".otp-field > input");
-const button = document.querySelector(".btn");
+const otpInputs = document.querySelectorAll(".otp-field > input");
+const otpButton = document.querySelector(".btn");
 
-window.addEventListener("load", () => inputs[0].focus());
-button.setAttribute("disabled", "disabled");
+window.addEventListener("load", () => otpInputs[0].focus());
+otpButton.setAttribute("disabled", "disabled");
 
 inputs[0].addEventListener("paste", function (event) {
   event.preventDefault();
@@ -24,6 +24,43 @@ inputs[0].addEventListener("paste", function (event) {
   }
 });
 
+function moveToNext(currentInput, nextInputId) {
+  if (currentInput.value.length >= currentInput.maxLength) {
+    document.getElementById(nextInputId).focus();
+  }
+}
+
+function checkInputs() {
+  var input6Value = document.getElementById("input6").value;
+  var submitButton = document.getElementById("submitButton");
+
+  if (input6Value) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+}
+function getEnteredTOTP() {
+  var input1Value = document.getElementById("input1").value;
+  var input2Value = document.getElementById("input2").value;
+  var input3Value = document.getElementById("input3").value;
+  var input4Value = document.getElementById("input4").value;
+  var input5Value = document.getElementById("input5").value;
+  var input6Value = document.getElementById("input6").value;
+
+  var totp =
+    input1Value +
+    input2Value +
+    input3Value +
+    input4Value +
+    input5Value +
+    input6Value;
+  return totp;
+}
+
+module.exports = {
+  getEnteredTOTP: getEnteredTOTP,
+};
 inputs.forEach((input, index1) => {
   input.addEventListener("keyup", (e) => {
     const currentInput = input;
