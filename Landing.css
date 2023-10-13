@@ -78,3 +78,13 @@ section {
   color: rgb(0, 179, 255);
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .text h2,
+  .main_content h2 {
+    font-size: 2.5em;
+  }
+  .main_content p {
+    font-size: 1em;
+  }
+}
