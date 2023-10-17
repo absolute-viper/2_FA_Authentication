@@ -1,1 +1,26 @@
-{"raj@gmail.com":{"id":1697198165032,"username":"Raj","email":"raj@gmail.com","password":"$2b$10$Pkk3FTUZJTuGkb5W5aYpQOGE4rJpqp8yoIT3567kZE9IUY2tDMGX.","secret":{"ascii":"IN/.Th]UIWu9SP<4,qT:iIb#[701%@>h","hex":"494e2f2e54685d554957753953503c342c71543a694962235b37303125403e68","base32":"JFHC6LSUNBOVKSKXOU4VGUB4GQWHCVB2NFEWEI23G4YDCJKAHZUA","otpauth_url":"otpauth://totp/SecretKey?secret=JFHC6LSUNBOVKSKXOU4VGUB4GQWHCVB2NFEWEI23G4YDCJKAHZUA"}}}
+{
+  "raj@gmail.com": {
+    "id": 1697198165032,
+    "username": "Raj",
+    "email": "raj@gmail.com",
+    "password": "$2b$10$Pkk3FTUZJTuGkb5W5aYpQOGE4rJpqp8yoIT3567kZE9IUY2tDMGX.",
+    "secret": {
+      "ascii": "IN/.Th]UIWu9SP<4,qT:iIb#[701%@>h",
+      "hex": "494e2f2e54685d554957753953503c342c71543a694962235b37303125403e68",
+      "base32": "JFHC6LSUNBOVKSKXOU4VGUB4GQWHCVB2NFEWEI23G4YDCJKAHZUA",
+      "otpauth_url": "otpauth://totp/SecretKey?secret=JFHC6LSUNBOVKSKXOU4VGUB4GQWHCVB2NFEWEI23G4YDCJKAHZUA"
+    }
+  },
+  "ritik1@gmail.com": {
+    "id": 1697449445859,
+    "username": "rITIK",
+    "email": "ritik1@gmail.com",
+    "password": "$2b$10$tSuqaCtG52X/iTHZuuyABuIvIEzu7lldc4UpMxfxSqLXmnzTJNvpu",
+    "secret": {
+      "ascii": "6WcpTG7XI]3s]dGpr&*1<#G0QarqHOUm",
+      "hex": "3657637054473758495d33735d64477072262a313c23473051617271484f556d",
+      "base32": "GZLWG4CUI43VQSK5GNZV2ZCHOBZCMKRRHQRUOMCRMFZHCSCPKVWQ",
+      "otpauth_url": "otpauth://totp/SecretKey?secret=GZLWG4CUI43VQSK5GNZV2ZCHOBZCMKRRHQRUOMCRMFZHCSCPKVWQ"
+    }
+  }
+}
